@@ -1,0 +1,24 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+div {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    background-color: transparent;
+    border-top: 40px solid rgb(15, 7, 232);
+    border-left: 40px solid rgb(204, 238, 10);
+    border-bottom: 40px solid rgb(241, 58, 3);
+    border-right: 40px solid rgb(4, 231, 50);
+    transition: transform 0.7s linear ; /* Added transition for smooth reverse rotation */
+}
+
+div:hover {
+    transform: rotateZ(180deg) ;
+}
